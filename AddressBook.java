@@ -16,18 +16,13 @@ public class AddressBook {
 	arrayThree.setState("Karnataka");
 	arrayThree.setZip(12345);
 	arrayThree.setPhoneNumber(456851136);
-	
 	//creating array list
 	ArrayList<Person> list=new ArrayList<Person>();
-	
 	//adding persons details into the list
 	list.add(arrayOne);
 	list.add(arrayTwo);
-	
 	//add new persons details
-	
 	list.add(arrayThree);
-	
 	//printing the array elements
 	for(Person elements : list) {
 		//edit contacts
@@ -41,5 +36,8 @@ public class AddressBook {
 	}
 	System.out.println("After adding the persons contacts:"+list);
 	System.out.println("After editing the persons contacts:"+list);
+	//delete contacts
+	list.remove(arrayTwo);
+	System.out.println("After removing contacts:"+list);
   }
 }

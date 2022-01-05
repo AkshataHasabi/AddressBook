@@ -30,8 +30,16 @@ public class AddressBook {
 	
 	//printing the array elements
 	for(Person elements : list) {
+		//edit contacts
+		if(elements.getFirstName()=="Akshata") {
+			elements.setFirstName("Kavya");
+		}
+		if(elements.getLastName()=="Hasabi") {
+			elements.setLastName("Patil");
+		}
 		System.out.println("Print the Array:"+ elements);
 	}
-	System.out.print("After adding the persons contacts:"+list);
+	System.out.println("After adding the persons contacts:"+list);
+	System.out.println("After editing the persons contacts:"+list);
   }
 }
